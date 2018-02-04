@@ -1,0 +1,16 @@
+task groovy {
+
+}
+class JavaGreeter{
+    public static void sayHello(){
+        System.out.println("Hello World");
+    }
+}
+
+JavaGreeter greeter = new JavaGreeter();
+greeter.sayHello();
+def foo = 6.5
+println "Let's do some math. 5 + 6 = ${5 + 6}"
+println "foo is of type: ${foo.class} and has value: $foo"
+foo = "a string"
+println "foo is now of type: ${foo.class} and has value: $foo"
