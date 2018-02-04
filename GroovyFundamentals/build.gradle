@@ -22,3 +22,13 @@ foo = 5
 println "doubleIt($foo) = ${doubleIt(foo)}"
 foo="foobar"
 println "doubleIt($foo) = ${doubleIt(foo)}"
+
+foo = "One million dollars"
+def myClosure = {
+    println "Hello form a closure"
+    println "The value of foo is $foo"
+}
+
+def bar = myClosure
+def baz = bar
+baz()
