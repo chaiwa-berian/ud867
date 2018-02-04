@@ -14,3 +14,11 @@ println "Let's do some math. 5 + 6 = ${5 + 6}"
 println "foo is of type: ${foo.class} and has value: $foo"
 foo = "a string"
 println "foo is now of type: ${foo.class} and has value: $foo"
+
+def doubleIt(n){
+    return n+n;
+}
+foo = 5
+println "doubleIt($foo) = ${doubleIt(foo)}"
+foo="foobar"
+println "doubleIt($foo) = ${doubleIt(foo)}"
